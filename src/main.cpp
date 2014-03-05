@@ -834,8 +834,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 2* 60; // Bridgecoin: 1 days
-static const int64 nTargetSpacing = 120; // Bridgecoin: 2 minute blocks
+static const int64 nTargetTimespan = 60; // Bridgecoin: 1 days
+static const int64 nTargetSpacing = 5; // Bridgecoin: 5 second blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
